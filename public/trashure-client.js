@@ -90,7 +90,7 @@ function showPosition(position, cb) {
 
 // Fetches information to be displayed
 const handlePinClick = function (e) {
-    const url = `http://localhost:8080/api/trashure_items/${e.target._options.text}`
+    const url = `/api/trashure_items/${e.target._options.text}`
     axios.get(url).then(res => {
         res.data.forEach(function(data) {
 
